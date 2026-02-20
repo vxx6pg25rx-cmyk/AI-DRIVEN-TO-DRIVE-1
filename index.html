@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Driven to Elite</title>
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#0b0b0f;
+      --muted:#5b5b66;
+      --card:#f6f6f8;
+      --line:#e6e6ee;
+      --btn:#0b0b0f;
+      --btnText:#ffffff;
+      --radius:28px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text);}
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px;}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0;}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.4px}
+    .logo{width:38px;height:38px;border-radius:12px;background:#0b0b0f;display:grid;place-items:center;color:white;font-size:12px}
+    .links{display:flex;gap:18px;align-items:center;color:var(--muted);font-size:14px}
+    .links a{text-decoration:none}
+    .cta{padding:10px 16px;border-radius:999px;background:var(--btn);color:var(--btnText);text-decoration:none;font-weight:600;font-size:14px}
+    .hero{padding:40px 0 18px}
+    h1{font-size:52px;line-height:1.05;margin:0 0 10px;letter-spacing:-1px}
+    .sub{max-width:740px;color:var(--muted);font-size:16px;line-height:1.55}
+    .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;margin-top:26px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+    .cardPad{padding:22px}
+    .img{height:340px;background:#ddd;display:block;width:100%;object-fit:cover}
+    .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:12px;color:var(--muted);background:white}
+    .btn{display:inline-flex;gap:10px;align-items:center;padding:12px 18px;border-radius:999px;background:var(--btn);color:var(--btnText);text-decoration:none;font-weight:650;font-size:14px}
+    .btn2{display:inline-flex;gap:10px;align-items:center;padding:12px 18px;border-radius:999px;background:white;border:1px solid var(--line);color:var(--text);text-decoration:none;font-weight:650;font-size:14px}
+    .section{padding:58px 0}
+    .section h2{font-size:34px;margin:0 0 10px;letter-spacing:-.6px}
+    .three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .mTitle{font-size:18px;font-weight:750;margin:0 0 8px}
+    .small{color:var(--muted);font-size:14px;line-height:1.55}
+    .price{margin-top:14px;font-weight:800}
+    .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    footer{padding:26px 0;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .img{height:260px}
+      h1{font-size:40px}
+      .three{grid-template-columns:1fr}
+      .links{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <div class="logo">DTE</div>
+        <div>DRIVEN TO ELITE</div>
+      </div>
+      <div class="links">
+        <a href="#services">Services</a>
+        <a href="#memberships">Memberships</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" href="#memberships">Join</a>
+      </div>
+      <a class="cta" href="#memberships">Join</a>
+    </div>
+
+    <div class="hero">
+      <span class="pill">Work hard • Play hard • Money follows the hustle</span>
+      <h1>Build discipline. Build wealth. Live elite.</h1>
+      <p class="sub">
+        Driven to Elite is a private platform for ambitious people who refuse average — combining structured routines, wealth habits,
+        and premium accountability systems that turn consistency into results.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <img class="img" src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1600&q=80" alt="Lifestyle"/>
+          <div class="cardPad">
+            <div class="row">
+              <a class="btn" href="#memberships">View memberships</a>
+              <a class="btn2" href="#services">What we offer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80" alt="Focus"/>
+          <div class="cardPad">
+            <div class="mTitle">What you get</div>
+            <p class="small">
+              A premium, no-fluff system: daily tracking, streaks, investing habits, and a clean dashboard designed for momentum.
+              (We’ll add Stripe + logins after this goes live.)
+            </p>
+            <div class="row">
+              <span class="pill">Clean design</span>
+              <span class="pill">Fast</span>
+              <span class="pill">Mobile-ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="section">
+      <h2>What we offer</h2>
+      <p class="sub">A premium system that makes high performance feel automatic — structure, tracking, and momentum in one place.</p>
+
+      <div class="three">
+        <div class="card"><div class="cardPad">
+          <div class="mTitle">Daily Standard</div>
+          <p class="small">Simple daily targets that build discipline without burnout. Focus on what moves the needle.</p>
+        </div></div>
+        <div class="card"><div class="cardPad">
+          <div class="mTitle">Wealth Habits</div>
+          <p class="small">Daily investing logs + watchlist mindset. Consistency first, then compounding.</p>
+        </div></div>
+        <div class="card"><div class="cardPad">
+          <div class="mTitle">Elite Accountability</div>
+          <p class="small">Streaks, milestones, and premium upgrades designed to keep you locked in.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="memberships" class="section">
+      <h2>Memberships</h2>
+      <p class="sub">Start free. Upgrade when you want premium tools and deeper systems.</p>
+
+      <div class="three">
+        <div class="card"><div class="cardPad">
+          <div class="mTitle">Free</div>
+          <p class="small">Foundational tools and the core structure to begin your transition from average to elite.</p>
+          <div class="price">£0 / month</div>
+          <div class="row"><a class="btn" href="#contact">Start</a></div>
+        </div></div>
+
+        <div class="card"><div class="cardPad">
+          <div class="mTitle">Elite</div>
+          <p class="small"><b>£3.99 first month</b> — limited introductory offer. Premium tools + advanced systems.</p>
+          <div class="price">Then £9.99 / month</div>
+          <div class="row"><a class="btn" href="#contact">Upgrade</a></div>
+          <p class="small" style="margin-top:10px">Invite reward: refer 5 friends → 1 month Elite free.</p>
+        </div></div>
+
+        <div class="card"><div class="cardPad">
+          <div class="mTitle">Inner Circle</div>
+          <p class="small"><b>£7.99 first month</b> — limited introductory offer. Highest access + priority features.</p>
+          <div class="price">Then £19.99 / month</div>
+          <div class="row"><a class="btn" href="#contact">Join Inner Circle</a></div>
+        </div></div>
+      </div>
+    </div>
+
+    <div id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="sub">For now, this is a simple contact section. Next step is adding payments + accounts.</p>
+      <div class="card"><div class="cardPad">
+        <p class="small"><b>Email:</b> add-your-email-here</p>
+        <p class="small"><b>TikTok:</b> @driven_to_elite</p>
+      </div></div>
+    </div>
+
+    <footer>
+      Driven to Elite — premium systems for disciplined ambition.
+    </footer>
+  </div>
+</body>
+</html>
